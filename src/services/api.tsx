@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://51.222.185.235:3333',
+  baseURL: 'https://coffee-dev.ddns.net/api',
 });
 
 api.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
