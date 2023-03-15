@@ -1,0 +1,22 @@
+.card-container {
+  background-size: cover;
+  clip-path: path(
+    'm 16 0 l 120 0 c 0 0 4 0 4 4 l 0 69 c 0 2 -2 4 -2 4 l -10 10 c 0 0 -2 2 -4 2 l -120 0 c 0 0 -4 0 -4 -4 l 0 -69 c 0 -2 2 -4 2 -4 l 10 -10 c 0 0 2 -2 4 -2'
+  );
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  transform: translateX(0px) translateY(-10px);
+  transition: all 0.3s ease-out 0s;
+}
+
+.card-container-new {
+  background-size: cover;
+  clip-path: path(
+    'm 16 0 l 120 0 c 0 0 4 0 4 4 l 0 69 c 0 2 -2 4 -2 4 l -10 10 c 0 0 -2 2 -4 2 l -120 0 c 0 0 -4 0 -4 -4 l 0 -69 c 0 -2 2 -4 2 -4 l 10 -10 c 0 0 2 -2 4 -2'
+  );
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+}
