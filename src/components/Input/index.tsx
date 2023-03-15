@@ -10,16 +10,16 @@ const Input = styled((props: TextFieldProps) => {
           color: '#999999',
         },
         '& .MuiFormLabel-root.Mui-focused': {
-          color: props.mainColor,
+          color: props.about,
         },
       }}
       InputProps={{ disableUnderline: true } as Partial<OutlinedInputProps>}
       {...props}
     />
   );
-})(({ theme, mainColor }) => ({
+})(({ theme, about }) => ({
   '& .MuiInput-underline:after': {
-    borderBottomColor: mainColor,
+    borderBottomColor: about,
   },
   '& .MuiFilledInput-root': {
     border: '1px solid #999999',

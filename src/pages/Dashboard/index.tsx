@@ -63,7 +63,7 @@ const Dashboard: React.FC = () => {
           variant="standard"
           label="Pesquisar"
           value={search}
-          mainColor={colors[0]}
+          about={colors[0]}
           onChange={handleSearch}
           InputProps={{
             startAdornment: (
