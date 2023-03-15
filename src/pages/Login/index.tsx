@@ -24,7 +24,6 @@ const Login: React.FC = () => {
 
   const handleLogin = async () => {
     const login = await Login(nickname, password);
-    console.log(login);
 
     if (login.status === 404 || login.status === 401)
       return Notify('Usuário ou senha inválidos', 'error');

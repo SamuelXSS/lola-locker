@@ -3,7 +3,6 @@ import { OutlinedInputProps } from '@mui/material/OutlinedInput';
 import { alpha, styled } from '@mui/material/styles';
 
 const Input = styled((props: TextFieldProps) => {
-  console.log('dasdasd', props.mainColor)
   return (
     <TextField
       sx={{
