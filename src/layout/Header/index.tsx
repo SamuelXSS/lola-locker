@@ -18,7 +18,7 @@ const pages = [''];
 const settings = ['Perfil', 'Logout'];
 
 function Header() {
-  const { user } = useAuth();
+  const { user, Logout } = useAuth();
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -79,7 +79,9 @@ function Header() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Grid container flexDirection="row" alignItems="center">
-              <Typography style={{marginRight: 20}}>{user?.nickname}</Typography>
+              <Typography style={{ marginRight: 20 }}>
+                {user?.nickname}
+              </Typography>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt={user?.nickname}
@@ -103,11 +105,12 @@ function Header() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Typography textAlign="center">Perfil</Typography>
+              </MenuItem>
+              <MenuItem onClick={Logout}>
+                <Typography textAlign="center">Logout</Typography>
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>
